@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:fragmen="head">
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Human Resource Project">
+<meta name="author" content="Juan Flores-Moroco">
+
+<title>Finanche</title>
+
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+<link rel="stylesheet" th:href="@{/css/chosen.min.css}">
+<link rel="stylesheet" th:href="@{/css/fontawesome.min.css}">
+<link rel="stylesheet" th:href="@{/css/solid.min.css}">
+<link rel="stylesheet" th:href="@{/css/estilo.css}">
+</head>
+
+
+<body>
+
+	<header th:fragment="header">
+
+		<div style="width: 100%; height: 100vh;">
+
+			<nav style="height: 10vh;"
+				class="barra navbar navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="#">Finanche</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item active"><a class="nav-link" href="#">Inicio
+								<span class="sr-only">(current)</span>
+						</a></li>
+						<li class="nav-item"><a class="nav-link" href="#acerca"
+							style="color: white">Acerca de</a></li>
+
+						<li class="nav-item"><a class="nav-link" href="#"
+							style="color: white">Letras</a></li>
+
+					</ul>
+
+
+					<div class="dropdown pmd-dropdown pmd-user-info ml-auto">
+						<a href="javascript:void(0);"
+							class="btn-user dropdown-toggle media align-items-center"
+							data-toggle="dropdown" data-sidebar="true" aria-expanded="false">
+
+							<div class="media-body"></div> <i class="fas fa-user"
+							style="color: white"></i> <i
+							class="material-icons md-light ml-2 pmd-sm" style="color: white">Juan
+								Lopez</i>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<a class="dropdown-item" href="javascript:void(0);">Editar
+								Perfil</a>
+							<a class="dropdown-item" href="javascript:void(0);">Cerrar
+								sesión</a>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+
+			<div id="carouselExampleIndicators" style="height: 90vh;"
+				class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0"
+						class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img style="width: 100%; height: 90vh;"
+							src="https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+							alt="Team working">
+						<div class="carousel-caption d-none d-md-block">
+							<h1 style="color: #000000;   overflow-y: hidden;">CARTERA DE LETRAS</h1>
+							<p style="color: #000000">¡La mejor herramienta para calcular
+								tus descuentos!</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img style="width: 100%; height: 90vh;"
+							src="https://images.pexels.com/photos/459654/pexels-photo-459654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+							alt="Finance">
+						<div class="carousel-caption d-none d-md-block">
+							<h1 style="color: #000000;   overflow-y: hidden;">CARTERA DE LETRAS</h1>
+							<p style="color: #000000">¡La mejor herramienta para calcular
+								tus descuentos!</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img style="width: 100%; height: 90vh;"
+							src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+							alt="Finance">
+						<div class="carousel-caption d-none d-md-block">
+							<h1 style="color: #000000;   overflow-y: hidden;">CARTERA DE LETRAS</h1>
+							<p style="color: #000000">¡La mejor herramienta para calcular
+								tus descuentos!</p>
+						</div>
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleIndicators"
+					role="button" data-slide="prev"> <span
+					class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+					class="sr-only">Previous</span>
+				</a> <a class="carousel-control-next" href="#carouselExampleIndicators"
+					role="button" data-slide="next"> <span
+					class="carousel-control-next-icon" aria-hidden="true"></span> <span
+					class="sr-only">Next</span>
+				</a>
+			</div>
+
+		</div>
+		<br /> <br />
+
+		<div id="acerca">
+			<h2 class="headertekst" style="text-align: center;">Acerca de</h2>
+			<br /> <br />
+
+
+			<div class="card-deck">
+				<div class="card">
+					<img class="card-img-top"
+						src="https://si.wsj.net/public/resources/images/BN-DT380_mindma_P_20140718113133.jpg"
+						width="90" height="300" alt="thinking">
+					<div class="card-body">
+						<h5 class="card-title">¿Que es una Letra?</h5>
+						<p class="card-text">La letra de cambio es un documento que
+							garantiza que el deudor pagará al acreedor, o a otra persona
+							autorizada, una cantidad de dinero, en una fecha y lugar
+							específicos</p>
+						<p class="card-text"></p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top"
+						src="http://www.grupoinka.pe/blog/fotos/180.jpg" width="90"
+						height="300" alt="discount">
+					<div class="card-body">
+						<h5 class="card-title">Ventajas</h5>
+						<p class="card-text">
+							<i class="fas fa-check"></i> Utiliza las tasas que desees
+						</p>
+						<p class="card-text">
+							<i class="fas fa-check"></i> Registra tus operaciones
+						</p>
+						<p class="card-text">
+							<i class="fas fa-check"></i> Rapidez en todo momento
+						</p>
+
+
+						<p class="card-text"></p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top"
+						src="https://www.rhinfo.com/sites/default/files/styles/full/public/thumbnails/image/effective-sustainability-performance-management.jpg?itok=yyJyFNOk"
+						width="90" height="300" alt="Performance">
+					<div class="card-body">
+						<h5 class="card-title">Caracteristicas</h5>
+						<p class="card-text">
+							<i class="fas fa-check"></i> Utiliza las tasas que desees
+						</p>
+						<p class="card-text">
+							<i class="fas fa-check"></i> Calculos a tiempo real
+						</p>
+						<p class="card-text">
+							<i class="fas fa-check"></i> El importe abonado por las Letras
+							considera el descuento correspondiente a la tasa de interés
+							asignada.
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+	</header>
+	<div class="container">
+		<h1>Human resource</h1>
+	</div>
+
+	<footer th:fragment="footer">
+		<script th:src="@{/js/jquery-3.4.1.min.js}"></script>
+		<script th:src="@{/js/bootstrap.min.js}"></script>
+		<script th:src="@{/js/chosen.jquery.min.js}"></script>
+		<script th:src="@{/js/fontawesome.min.js}"></script>
+		<script th:src="@{/js/sweetalert.min.js}"></script>
+	</footer>
+</body>
+</html>

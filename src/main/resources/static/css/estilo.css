@@ -1,0 +1,7 @@
+@charset "ISO-8859-1";
+
+*,body
+{
+	 scroll-behavior: smooth;
+	  overflow-x: hidden;
+}
